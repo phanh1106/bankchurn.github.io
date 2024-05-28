@@ -5,7 +5,7 @@ import numpy as np
 clf=pickle.load(open('bank_churn_1.pkl','rb'))
 st.title("Dự đoán sự rời bỏ của khách hàng ngân hàng")
 CustomerId=st.number_input("CustomerId",0,275056,1000)
-Age = st.number_input("Age", 18, 40, 20)
+
 CreditScore = st.number_input("CreditScore", 0, 850, 600)
 Balance = st.number_input("Balance", 0.0, 121263.62, 50000.0)
 EstimatedSalary = st.number_input("EstimatedSalary", 0.0,184866.69, 50000.0)
